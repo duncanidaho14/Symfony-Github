@@ -24,7 +24,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('composer.lock') }}
           
       - name: "Composer install"
-        run: composer update --no-interaction --no-progress
+        run: composer install --no-interaction --no-progress
           
       # Install Symfony CLI
       - name: Symfony CLI
